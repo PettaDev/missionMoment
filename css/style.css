@@ -1,0 +1,183 @@
+/* color font #458C5A */
+
+/* Reset CSS */
+* {
+    margin: 0; /*sem margem*/
+    padding: 0; /*sem distancia do próximo conteúdo*/
+    box-sizing: border-box; 
+    text-decoration: none; /* tirar qualquer decoração que pode ter no texto */
+}
+
+body {
+    font-size: 100%; /* tamanho da fonte 100% */
+    background-color: #FFFFFF;
+    height: auto;
+}
+
+
+.cabecalho {
+    background-color: #F3F3F3;   
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+    justify-content: space-between;
+    gap: 15px;
+    padding: 24px;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: auto;
+    box-shadow: 4px 5px 4px 0px rgba(0, 0, 0, 0.25);
+    z-index: 5;
+}
+
+.cabecalho-logo {
+    width: 70px;
+    cursor: pointer;
+}
+
+.cabecalho-titulo {
+    display: flex;
+    font-size: 20px;
+    color: #458C5A;
+}
+
+.cabecalho-nav {
+    display: flex;
+    gap: 32px;
+}
+
+.cabecalho-nav-item {
+    position: relative;
+    color: black;
+    font-family: 'Sarala', sans-serif;
+    font-size: 12px;
+    font-weight: 400;
+    letter-spacing: 0.5px;
+}
+
+.cabecalho-nav-item:after {
+    content: "";
+    position: absolute;
+    background-color: #458C5A;
+    height: 3px;
+    width: 0;
+    left: 0%;
+    bottom: -5px;
+    transition: 0.3s;
+
+}
+
+.cabecalho-nav-item:hover {
+    color: black;
+}
+
+.cabecalho-nav-item:hover:after {
+    width: 100%;
+}
+
+.card-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 25px;
+    margin-top: 40px;
+}
+
+.card {
+    width: 325px;
+    background-color: #458C5A;
+    border-radius: 10px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.3);
+    overflow: hidden;
+    transition: transform 0.6s ease;
+    margin-bottom: 5%;
+}
+
+.card:hover {
+    transform: translateY(-20px);
+    z-index: 0;
+}
+
+.card img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+.card-content {
+    padding: 20px;
+}
+
+.card-content h1 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: white;
+    font-weight: bold;
+}
+
+.card-content p {
+    font-size: 16px;
+    color: white;
+    margin-bottom: 20px;
+}
+
+.card-button {
+    display: inline-block;
+    background-color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    padding: 8px 15px;
+    color: black;
+}
+
+.card-button:hover {
+    background-color: #77b68a;
+    
+}
+
+footer {
+    width: 100%;
+    background: #458C5A;
+    min-height: 100px;
+    padding: 3px 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* .p-social-footer {
+    
+} */
+
+.social_icon {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px 0;
+    flex-wrap: wrap;
+}
+
+.social_icon li {
+    list-style: none;
+}
+.social_icon li a {
+    font-size: 1.4em;
+    color: #fff;
+    margin: 0 10px;
+    display: inline-block;
+    transition: 0.5s;
+}
+
+.social_icon li a:hover {
+    transform: translateY(-10px);
+}
+
+footer p {
+    color: #fff;
+    text-align: center;
+    margin-top: 15px;
+    margin-bottom: 10px;
+    font-size: 10px;
+}
