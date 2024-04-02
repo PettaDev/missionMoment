@@ -12,6 +12,7 @@ body {
     font-size: 100%; /* tamanho da fonte 100% */
     background-color: #FFFFFF;
     height: auto;
+    height: 100vh;
 }
 
 
@@ -22,7 +23,7 @@ body {
     align-items: center;
     justify-content: space-between;
     gap: 15px;
-    padding: 24px;
+    padding-bottom: 24px;
     top: 0;
     left: 0;
     width: 100%;
@@ -123,7 +124,7 @@ body {
 
 .card-button {
     display: inline-block;
-    background-color: white;
+    background-color: #F3F3F3;
     text-decoration: none;
     border-radius: 5px;
     padding: 8px 15px;
@@ -131,8 +132,40 @@ body {
 }
 
 .card-button:hover {
-    background-color: #77b68a;
+    background-color: #FFFFFF;
     
+}
+
+/* Pág Projetos */
+.WALL-E {
+    margin: 20px auto;
+    max-width: 800px;
+    background: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+}
+
+.EVA {
+    margin: 20px auto;
+    max-width: 800px;
+    background: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+}
+
+.container-titulo {
+    color: #333;
+    font-size: 24px;
+}
+
+.container-img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.container-text {
+    color: #444;
+    font-size: 16px;
 }
 
 footer {
@@ -163,7 +196,7 @@ footer {
     list-style: none;
 }
 .social_icon li a {
-    font-size: 1.4em;
+    font-size: 1.5em;
     color: #fff;
     margin: 0 10px;
     display: inline-block;
@@ -177,7 +210,58 @@ footer {
 footer p {
     color: #fff;
     text-align: center;
-    margin-top: 15px;
+    margin-top: 2px;
     margin-bottom: 10px;
-    font-size: 10px;
+    font-size: 15px;
+}
+
+
+.container-form {
+    max-width: 600px;
+    margin: 20px auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.container h2 {
+    margin-bottom: 20px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.form-group input, .form-group textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.form-group textarea {
+    height: 100px;
+}
+
+.btn {
+    background-color: #458C5A;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 400ms;
+
+}
+
+.btn:hover {
+    background-color: #77b389;
+    transform: translatey(-1px);
 }
